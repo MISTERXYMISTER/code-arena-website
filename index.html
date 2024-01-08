@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Code arena</title>
+    <link rel="" href="https://www.fontspace.com/modern-warfare-font-f78556">
 </head>
+<style>
+    @font-face {
+        font-family: font1;
+        src: url("ModernWarfare-OV7KP.ttf");
+    }
+
+    @font-face {
+        font-family: font2;
+        src: url("MouldyCheeseRegular-WyMWG.ttf");
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+
+    }
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .nav {
+        display: flex;
+        padding: 20px 20px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    .nav li {
+        font-family: font2;
+        display: inline-flex;
+        padding: 12px 19px;
+        border-radius: 5px;
+    }
+
+    .nav li:hover {
+        background-color: orangered;
+        color: black;
+        transition: 0.3s;
+    }
+
+    .nav li a {
+        list-style: none;
+        color: rgb(255, 255, 255);
+        display: flex;
+        font-size: 19px;
+    }
+
+    .stylish p {
+        font-family: font1;
+        font-size: 195px;
+        text-align: left;
+        padding-top: 35px;
+        line-height: 0.8;
+        color: white;
+    }
+    .sub p{
+        color: white;
+        font-family: font2;
+        font-size: 25px;
+        padding-left: 100px;
+        padding-top: 20px;
+        font-weight: 200;
+    }
+</style>
+
 <body>
-    <p>hi</p>
+
+    <div class="nav">
+
+
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <div class="stylish">
+        <p>CODE ARENA</p>
+    </div>
+    <div class="sub">
+        <p>HERES IS WHERE CODING START...</p>
+    </div>
+
 
 </body>
+
 </html>
