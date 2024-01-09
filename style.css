@@ -59,24 +59,16 @@ body {
 }
 
 
-.sub{position:absolute; top:25vw;}
+.sub{position:absolute; top:25vw; background-color:transparent; height:10vw; width:100%;}
 
-.sub_p{
-	position:absolute;
-	width:30vw;
-    color: white;
-    font-family: font3;
-    font-size: 35px;
-    top:1vw;
-    left:-40vw;
-    z-index:4000;
-    animation:1s anm2 forwards;
-}
+.stylish{background-color:transparent; position:absolute; height:25vw; width:100%; top:10vw; z-index:-100;}
 
-.stylish_p{position:absolute;
+.stylish_p{position:relative;
 	font-family: font1;
-    top:23vw;
-    font-size: 195px;
+    top:12vw;
+    left:10vw;
+    width:80vw;
+    font-size: 10vw;
     text-align: left;
     padding-left: 30px;
     padding-top: 35px;
@@ -85,12 +77,29 @@ body {
     opacity:1;
     z-index:250;
     animation:1s anm forwards;
+    cursor:default;
     }
-   
-.hide_anm_help{position:absolute; height:10vw; width:80vw; background-color:black; top:24vw; left:2vw; z-index:300;} 
+    
+.sub_p{
+	position:relative;
+	width:30vw;
+    color: white;
+    font-family: font3;
+    font-size: 2vw;
+    top:1vw;
+    left:35.6vw;
+    z-index:4000;
+    animation:1s anm2 forwards;
+    animation-delay:0.5s;
+    opacity:0;
+    cursor:default;
+}
 
-@keyframes anm{from{top:23vw;} to{top:15vw;}}
-@keyframes anm2{from{left:-40vw;} to{left:5vw;}}
+   
+.hide_anm_help{position:absolute; height:10vw; width:100%; background-color:black; top:24vw; left:0vw; z-index:300;} 
+
+@keyframes anm{from{top:12vw;} to{top:5vw;}}
+@keyframes anm2{from{filter:blur(10px); opacity:0;} to{filter:blur(0px); opacity:1;}}
 
 
 
