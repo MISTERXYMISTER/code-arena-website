@@ -1,0 +1,127 @@
+@font-face {
+    font-family: font1;
+    src: url("ModernWarfare-OV7KP.ttf");
+}
+
+@font-face {
+    font-family: font2;
+    src: url("MouldyCheeseRegular-WyMWG.ttf");
+}
+
+@font-face {
+    font-family: font3;
+    src: url("OmegleRegular-owopB.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav {
+    display: flex;
+    padding: 20px 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.nav li {
+    font-family: font2;
+    display: inline-flex;
+    padding: 12px 19px;
+    border-radius: 5px;
+}
+
+.nav li:hover {
+    background-color: orangered;
+    color: black;
+    transition: 0.3s;
+}
+
+.nav li a {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 19px;
+}
+
+.nav li a:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+.stylish p {
+    font-family: font1;
+    font-size: 195px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 35px;
+    line-height: 0.8;
+    color: white;
+}
+
+.stylish p {
+    animation: 2s anim-lineup ease-out;
+}
+
+@keyframes anim-lineup {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.sub p {
+    color: white;
+    font-family: font3;
+    font-size: 35px;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.sub p {
+    animation: 3.5s anim-lineDown ease-in;
+}
+
+@keyframes anim-lineDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-0%);
+    }
+}
